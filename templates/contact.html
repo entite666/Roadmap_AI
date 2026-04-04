@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Roadmap AI</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="result-container">
+        <h1>Contact <span style="color:#7c3aed">Us</span></h1>
+        <div class="roadmap-box">
+            <form action="/send" method="POST">
+                <div style="margin-bottom:20px">
+                    <label style="color:#aaa;display:block;margin-bottom:8px">Your Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" style="width:100%">
+                </div>
+                <div style="margin-bottom:20px">
+                    <label style="color:#aaa;display:block;margin-bottom:8px">Your Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" style="width:100%">
+                </div>
+                <div style="margin-bottom:20px">
+                    <label style="color:#aaa;display:block;margin-bottom:8px">Message</label>
+                    <textarea name="message" placeholder="Your message..." rows="5" style="width:100%;padding:16px;border-radius:12px;border:1px solid #333;background:#0f0f0f;color:#fff;font-size:16px;outline:none;resize:vertical"></textarea>
+                </div>
+                <button class="button" type="submit">
+                    <span class="dots_border"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sparkle">
+                        <path class="path" d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/>
+                    </svg>
+                    <span class="text_button">Send Message</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built by Entite07 | 2026</p>
+    </footer>
+
+</body>
+</html>

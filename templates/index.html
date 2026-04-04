@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Maker</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">Roadmap AI</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <div class="hero">
+        <h1>Build Your Learning Roadmap</h1>
+        <p>Enter any goal and Let AI create a Personalized Roadmap step by step for You</p>
+            
+    <main>
+        <form action="/generate" method="POST">
+            <input type="text" name="goal" placeholder="enter your goal e.g learn python ">
+        <button class="button" type="submit">
+              <span class="dots_border"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sparkle">
+               <path class="path" d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/>
+              </svg>
+              <span class="text_button">Generate Roadmap</span>
+         </button>
+        </form>
+
+    </main>
+    </div>
+     
+
+    <div class="features">
+
+    <div class="container noselect">
+        <div class="canvas">
+            <div class="tr-1 tracker"></div>
+            <div class="tr-2 tracker"></div>
+            <div class="tr-3 tracker"></div>
+            <div class="tr-4 tracker"></div>
+            <div class="tr-5 tracker"></div>
+            <div class="tr-6 tracker"></div>
+            <div class="tr-7 tracker"></div>
+            <div class="tr-8 tracker"></div>
+            <div class="tr-9 tracker"></div>
+            <div class="tr-10 tracker"></div>
+            <div class="tr-11 tracker"></div>
+            <div class="tr-12 tracker"></div>
+            <div class="tr-13 tracker"></div>
+            <div class="tr-14 tracker"></div>
+            <div class="tr-15 tracker"></div>
+            <div class="tr-16 tracker"></div>
+            <div class="tr-17 tracker"></div>
+            <div class="tr-18 tracker"></div>
+            <div class="tr-19 tracker"></div>
+            <div class="tr-20 tracker"></div>
+            <div class="tr-21 tracker"></div>
+            <div class="tr-22 tracker"></div>
+            <div class="tr-23 tracker"></div>
+            <div class="tr-24 tracker"></div>
+            <div class="tr-25 tracker"></div>
+            <div id="card">
+                <p id="prompt">AI Powered</p>
+                <div class="title">AI Powered</div>
+                <div class="subtitle">Uses advanced AI to create personalised roadmaps</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container noselect">
+        <div class="canvas">
+            <div class="tr-1 tracker"></div>
+            <div class="tr-2 tracker"></div>
+            <div class="tr-3 tracker"></div>
+            <div class="tr-4 tracker"></div>
+            <div class="tr-5 tracker"></div>
+            <div class="tr-6 tracker"></div>
+            <div class="tr-7 tracker"></div>
+            <div class="tr-8 tracker"></div>
+            <div class="tr-9 tracker"></div>
+            <div class="tr-10 tracker"></div>
+            <div class="tr-11 tracker"></div>
+            <div class="tr-12 tracker"></div>
+            <div class="tr-13 tracker"></div>
+            <div class="tr-14 tracker"></div>
+            <div class="tr-15 tracker"></div>
+            <div class="tr-16 tracker"></div>
+            <div class="tr-17 tracker"></div>
+            <div class="tr-18 tracker"></div>
+            <div class="tr-19 tracker"></div>
+            <div class="tr-20 tracker"></div>
+            <div class="tr-21 tracker"></div>
+            <div class="tr-22 tracker"></div>
+            <div class="tr-23 tracker"></div>
+            <div class="tr-24 tracker"></div>
+            <div class="tr-25 tracker"></div>
+            <div id="card">
+                <p id="prompt">Any Goal</p>
+                <div class="title">Any Goal</div>
+                <div class="subtitle">Coding, business, fitness or art — we cover it all</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container noselect">
+        <div class="canvas">
+            <div class="tr-1 tracker"></div>
+            <div class="tr-2 tracker"></div>
+            <div class="tr-3 tracker"></div>
+            <div class="tr-4 tracker"></div>
+            <div class="tr-5 tracker"></div>
+            <div class="tr-6 tracker"></div>
+            <div class="tr-7 tracker"></div>
+            <div class="tr-8 tracker"></div>
+            <div class="tr-9 tracker"></div>
+            <div class="tr-10 tracker"></div>
+            <div class="tr-11 tracker"></div>
+            <div class="tr-12 tracker"></div>
+            <div class="tr-13 tracker"></div>
+            <div class="tr-14 tracker"></div>
+            <div class="tr-15 tracker"></div>
+            <div class="tr-16 tracker"></div>
+            <div class="tr-17 tracker"></div>
+            <div class="tr-18 tracker"></div>
+            <div class="tr-19 tracker"></div>
+            <div class="tr-20 tracker"></div>
+            <div class="tr-21 tracker"></div>
+            <div class="tr-22 tracker"></div>
+            <div class="tr-23 tracker"></div>
+            <div class="tr-24 tracker"></div>
+            <div class="tr-25 tracker"></div>
+            <div id="card">
+                <p id="prompt">Free Forever</p>
+                <div class="title">Free Forever</div>
+                <div class="subtitle">No signup needed. Just enter your goal</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+
+    <footer>
+        <p>Built by Entite07 | 2026</p>
+    </footer>
+
+</body>
+</html>
